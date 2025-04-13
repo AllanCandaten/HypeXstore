@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan 312 - HypexStore</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .paginacao {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .paginacao button {
+            background-color: #02fea9;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .paginacao button:disabled {
+            background-color: #333;
+            color: #888;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jordan 312</h1>
+    </header>
+    <main>
+        <div class="galeria" id="galeria-jordan312">
+            <!-- As imagens serão inseridas aqui automaticamente -->
+        </div>
+
+        <div class="paginacao">
+            <button id="anterior">Anterior</button>
+            <button id="proximo">Próximo</button>
+        </div>
+
+        <a href="../../nike.html" class="voltar">Voltar</a>
+    </main>
+
+    <script>
+        const pasta = "../../assets/images/modelos/nike/jordan312/";
+        const imagens = [];
+for (let i = 1; i <= 36; i++) {
+    imagens.push(`jordan312${i}.jpg`);
+}
+        const galeria = document.getElementById("galeria-jordan312");
+        const anterior = document.getElementById("anterior");
+        const proximo = document.getElementById("proximo");
+
+        const imagensPorPagina = 20;
+        let paginaAtual = 1;
+
+        function exibirPagina(pagina) {
+            galeria.innerHTML = "";
+            const inicio = (pagina - 1) * imagensPorPagina;
+            const fim = inicio + imagensPorPagina;
+            const imagensPagina = imagens.slice(inicio, fim);
+
+            imagensPagina.forEach(nome => {
+                const img = document.createElement("img");
+                img.src = pasta + nome;
+                img.alt = nome.split(".")[0];
+                galeria.appendChild(img);
+            });
+
+            anterior.disabled = pagina === 1;
+            proximo.disabled = fim >= imagens.length;
+        }
+
+        anterior.addEventListener("click", () => {
+            if (paginaAtual > 1) {
+                paginaAtual--;
+                exibirPagina(paginaAtual);
+            }
+        });
+
+        proximo.addEventListener("click", () => {
+            if ((paginaAtual * imagensPorPagina) < imagens.length) {
+                paginaAtual++;
+                exibirPagina(paginaAtual);
+            }
+        });
+
+        // Exibir a primeira página ao carregar
+        exibirPagina(paginaAtual);
+    </script>
+</body>
+</html>
