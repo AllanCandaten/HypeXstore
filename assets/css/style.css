@@ -150,3 +150,9 @@ footer .direitos {
     font-size: 0.9em;
     margin: 0;
 }
+/* Ajusta o tamanho das imagens da galeria para telas maiores */
+@media (min-width: 1024px) {
+    .galeria img {
+        max-width: 30%;
+    }
+}
