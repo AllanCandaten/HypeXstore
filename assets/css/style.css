@@ -88,7 +88,15 @@ header {
     font-weight: bold;
     transition: background-color 0.3s;
     display: inline-block;
-    margin: 30px auto 0;
+
+    /* Novo: fixa no canto inferior esquerdo */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    /* Opcional: sombra e z-index pra destacar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 999;
 }
 
 .modelo:hover, .marca:hover, .voltar:hover {
