@@ -246,13 +246,39 @@ footer .direitos {
     }
   }
   
-/* Estilo responsivo simples para manter a tabela como no PC */
-@media (max-width: 600px) {
-    .tabela-container {
-      overflow-x: auto;
-    }
+  /* Estilos para a tabela de preços mobile*/
   
-    table {
-      min-width: 600px; /* ou o tamanho necessário para sua tabela */
-    }
+  .tabela-container {
+    overflow-x: auto;
+    margin: 0 auto;
+    max-width: 100%;
   }
+  
+  table {
+    width: 100%;
+    min-width: 600px; /* Mantém a tabela legível no mobile */
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #02fea9;
+    text-align: left;
+    color: white;
+  }
+  
+  th {
+    background-color: #02fea9;
+    color: black;
+  }
+  
+  td a {
+    color: #02fea9;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+  }
+  
