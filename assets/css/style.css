@@ -157,3 +157,12 @@ footer .direitos {
         max-width: 30%;
     }
 }
+
+.marca.preco {
+    background-color: #045d48; /* Ou #045d48 ou #007575 */
+    color: #fff; /* Ou #fff dependendo da cor de fundo */
+    transition: 0.3s ease;
+  }
+  .marca.preco:hover {
+    filter: brightness(1.1);
+  }

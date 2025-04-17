@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Tabela de Preços | HypexStore</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #02fea9;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      color: #02fea9;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      background-color: #111;
+      border: 1px solid #02fea9;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #02fea9;
+    }
+
+    th {
+      background-color: #02fea9;
+      color: #000;
+    }
+
+    tr:hover {
+      background-color: #1a1a1a;
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        text-align: left;
+      }
+
+      td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        color: #02fea9;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Tabela de Preços</h1>
+
+  <!-- Menu de navegação -->
+  <nav>
+    <a href="#nike">Nike</a>
+    <a href="#adidas">Adidas</a>
+    <a href="#newbalance">New Balance</a>
+    <a href="#puma">Puma</a>
+  </nav>
+
+  <!-- Tabela Nike -->
+  <h2 id="nike">Nike</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Preço</th>
+        <th>Disponibilidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/nike/dunk_low.html" style="color: #02fea9; text-decoration: none;">Dunk Low</a>
+          </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/nike/airmax1.html" style="color: #02fea9; text-decoration: none;">Air Max 1</a>
+          </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/nike/jordan1low.html" style="color: #02fea9; text-decoration: none;">Jordan 1 Low</a>
+          </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/nike/jordan1high.html" style="color: #02fea9; text-decoration: none;">Jordan 1 High</a>
+          </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/jordan3.html" style="color: #02fea9; text-decoration: none;">Jordan 3</a>
+    </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/jordan4.html" style="color: #02fea9; text-decoration: none;">Jordan 4</a>
+    </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/jordan5.html" style="color: #02fea9; text-decoration: none;">Jordan 5</a>
+    </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/jordan6.html" style="color: #02fea9; text-decoration: none;">Jordan 6</a>
+    </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/jordan11.html" style="color: #02fea9; text-decoration: none;">Jordan 11</a>
+    </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/jordan312.html" style="color: #02fea9; text-decoration: none;">Jordan 312</a>
+    </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/kyrie.html" style="color: #02fea9; text-decoration: none;">Kyrie</a>
+    </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+        <a href="modelos/nike/travis.html" style="color: #02fea9; text-decoration: none;">Travis Scott</a>
+    </td>
+        <td data-label="Preço">R$ 749,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tabela Adidas -->
+  <h2 id="adidas">Adidas</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Preço</th>
+        <th>Disponibilidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/adidas/forum.html" style="color: #02fea9; text-decoration: none;">Forum Low</a>
+        </td>
+        <td data-label="Preço">R$ 649,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/adidas/350.html" style="color: #02fea9; text-decoration: none;">Yeezy 350</a>
+        </td>
+        <td data-label="Preço">R$ 649,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/adidas/500.html" style="color: #02fea9; text-decoration: none;">Yeezy 500</a>
+        </td>
+        <td data-label="Preço">R$ 649,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/adidas/700.html" style="color: #02fea9; text-decoration: none;">Yeezy 700</a>
+        </td>
+        <td data-label="Preço">R$ 649,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/adidas/samba.html" style="color: #02fea9; text-decoration: none;">Samba</a>
+        </td>
+        <td data-label="Preço">R$ 649,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/adidas/campus.html" style="color: #02fea9; text-decoration: none;">Campus</a>
+        </td>
+        <td data-label="Preço">R$ 649,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tabela New Balance -->
+  <h2 id="newbalance">New Balance</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Preço</th>
+        <th>Disponibilidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/530.html" style="color: #02fea9; text-decoration: none;">NB 530</a>
+        </td>
+        <td data-label="Preço">R$ 599,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/550.html" style="color: #02fea9; text-decoration: none;">NB 550</a>
+        </td>
+        <td data-label="Preço">R$ 649,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/900.html" style="color: #02fea9; text-decoration: none;">NB 900</a>
+        </td>
+        <td data-label="Preço">R$ 599,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/991.html" style="color: #02fea9; text-decoration: none;">NB 991</a>
+        </td>
+        <td data-label="Preço">R$ 599,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/992.html" style="color: #02fea9; text-decoration: none;">NB 992</a>
+        </td>
+        <td data-label="Preço">R$ 599,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/993.html" style="color: #02fea9; text-decoration: none;">NB 993</a>
+        </td>
+        <td data-label="Preço">R$ 599,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/1000.html" style="color: #02fea9; text-decoration: none;">NB 1000</a>
+        </td>
+        <td data-label="Preço">R$ 599,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/newbalance/9060.html" style="color: #02fea9; text-decoration: none;">NB 9060</a>
+        </td>
+        <td data-label="Preço">R$ 699,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Tabela Puma -->
+  <h2 id="puma">Puma</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Preço</th>
+        <th>Disponibilidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Modelo">
+            <a href="modelos/puma/xl.html" style="color: #02fea9; text-decoration: none;">XL</a>
+        </td>
+        <td data-label="Preço">R$ 599,90</td>
+        <td data-label="Status">Sob encomenda</td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="index.html" class="voltar">Voltar</a>
+</body>
+</html>
