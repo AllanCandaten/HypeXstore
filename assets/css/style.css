@@ -248,42 +248,34 @@ footer .direitos {
   
   /* Estilos para a tabela de preços mobile*/
   
-/* container com scroll no mobile */
+/* Envolve a tabela para scroll se a tela for menor que o tamanho */
 .tabela-container {
-    width: 100%;
-    overflow-x: auto;
-    margin-bottom: 2rem;
-  }
-  
-  /* garante layout de desktop mesmo no mobile */
-  table {
-    width: 100%;
-    min-width: 400px; /* ajuste esse valor se necessário */
-    border-collapse: collapse;
-  }
-  
-  table th, table td {
-    padding: 12px;
-    border: 1px solid #02fea9;
-    text-align: left;
-  }
-  
-  table th {
-    background-color: #02fea9;
-    color: #000;
-  }
-  
-  table td a {
-    color: #02fea9;
-    text-decoration: none;
-  }
-  
-  /* opcional: estilizar barra de scroll no WebKit */
-  .tabela-container::-webkit-scrollbar {
-    height: 6px;
-  }
-  .tabela-container::-webkit-scrollbar-thumb {
-    background: #02fea9;
-    border-radius: 3px;
-  }
-  
+  overflow-x: auto;
+}
+
+/* Tabela de largura fixa */
+.tabela-fixa {
+  width: 800px;           /* largura fixa da tabela */
+  table-layout: fixed;    /* força o navegador a usar as larguras do colgroup */
+  border-collapse: collapse;
+}
+
+/* Células com texto que quebra e elipses */
+.tabela-fixa th,
+.tabela-fixa td {
+  padding: 12px;
+  border: 1px solid #02fea9;
+  white-space: nowrap;          /* impede quebra automática */
+  overflow: hidden;             /* conteúdo extra escondido */
+  text-overflow: ellipsis;      /* "..." se o texto não couber */
+}
+
+.tabela-fixa th {
+  background-color: #02fea9;
+  color: #000;
+}
+
+.tabela-fixa td a {
+  color: #02fea9;
+  text-decoration: none;
+}
