@@ -246,41 +246,13 @@ footer .direitos {
     }
   }
   
-  /* para a tabela de preços ficar correto no celular */
-  @media (max-width: 600px) {
-    table {
-      width: 100%;
-      font-size: 14px;
-      display: block;
+/* Estilo responsivo simples para manter a tabela como no PC */
+@media (max-width: 600px) {
+    .tabela-container {
       overflow-x: auto;
-      white-space: nowrap;
     }
   
-    thead {
-      display: none;
-    }
-  
-    tr {
-      display: block;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 10px;
-    }
-  
-    td {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      border: none;
-      border-bottom: 1px solid #eee;
-    }
-  
-    td::before {
-      content: attr(data-label);
-      font-weight: bold;
-      flex-basis: 50%;
-      text-align: left;
+    table {
+      min-width: 600px; /* ou o tamanho necessário para sua tabela */
     }
   }
-  
