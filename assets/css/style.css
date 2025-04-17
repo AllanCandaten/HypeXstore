@@ -258,7 +258,7 @@ footer .direitos {
   /* garante layout de desktop mesmo no mobile */
   table {
     width: 100%;
-    min-width: 600px; /* ajuste esse valor se necessário */
+    min-width: 400px; /* ajuste esse valor se necessário */
     border-collapse: collapse;
   }
   
